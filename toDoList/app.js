@@ -1,5 +1,16 @@
 console.log("Can I kick it");
 
+// This creates a close button and adds it to each item added
+
+let theList = document.getElementsByTagName('LI');
+let i;
+for (i=0; i <theList.length; i++) {
+
+  let span = document.createElement('SPAN');
+  span.className = 'close';
+  span.appendChild(txt);
+  theList[i].appendChild(span);
+}
 //This allows the  close button to hide the item selected to remove from the List
 let close =
 
@@ -8,8 +19,8 @@ let j;
 
 for (j=0; j < close.length; j++) {
   close[j].onclick = () => {
-    let section = this.parentElement;
-    section.style.display = "none";
+    let div = this.parentElement;
+    li.style.display = "none";
   }
 }
 
@@ -38,27 +49,14 @@ function newElement() {
 
     let span = document.createElement('SPAN');
     var txt = document.createTextNode('\u00D7');
-
     span.className = 'close';
     span.appendChild(txt);
     li.appendChild(span);
 
     for (let i = 0; i < close.length; i++) {
       close[i].onclick = () => {
-        let section = this.parentElement;
-        section.style.display = "none";
+        let div = this.parentElement;
+        li.style.display = "none";
       }
-      }
-}
-
-// This creates a close button and adds it to each item added
-
-let theList = document.getElementsByTagName('LI');
-let i;
-for (i=0; i <theList.length; i++) {
-
-  let span = document.createElement('SPAN');
-  span.className = 'close';
-  span.appendChild(txt);
-  theList[i].appendChild(span);
+    }
 }
