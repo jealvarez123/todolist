@@ -1,7 +1,49 @@
-h1 {
-  color: purple;
+body {
+  background-color: #8DB3C7
+
 }
 
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+
+  color: purple;
+}
+h2 {
+  padding: 30px 0px 0px 10px;
+}
+
+
+
+
 main {
-  background-color: white;
+  background-image:url(https://i.imgur.com/lj2P3NX.jpg);
+  background-size: cover;
+  margin: 50px 50px;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  width: 900px;
+  font-family: 'Permanent Marker', cursive;
+}
+ul {
+  font-family: 'Permanent Marker', cursive;
+  list-style: none;
+  text-align: center;
+  font-size: 45px;
+  font-size-adjust: auto;
+}
+
+span {
+  font-size: 20px;
+  margin: 2xp 0px;
+}
+
+input {
+  height: 49px;
+  font-size: 40px;
+
 }

@@ -27,7 +27,7 @@ for (j=0; j < close.length; j++) {
 // This adds a 'Checked' symbol when clicking on the selected item
 
 let check = document.querySelector('ul');
-check.addEventListener('click', (e) => {
+check.addEventListener('submit', (e) => {
   if (e.target.tagName === 'LI') {
     e.target.classList.toggle('checked');
   }
