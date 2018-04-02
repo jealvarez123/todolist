@@ -9,7 +9,7 @@ header {
 
 h1 {
   font-family: 'Permanent Marker', cursive;
-
+  font-size: 48px;
   color: purple;
 }
 h2 {
@@ -28,7 +28,9 @@ main {
   position: relative;
   width: 900px;
   font-family: 'Permanent Marker', cursive;
+  text-align: center;
 }
+
 ul {
   font-family: 'Permanent Marker', cursive;
   list-style: none;
@@ -45,5 +47,8 @@ span {
 input {
   height: 49px;
   font-size: 40px;
+  background: none;
 
 }
+
+/* Include the padding and border in an element's total width and height */
